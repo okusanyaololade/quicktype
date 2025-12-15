@@ -125,8 +125,8 @@
     </main>
 
     <!-- Results Modal -->
-    <div id="resultsModal" class="fixed inset-0 bg-black bg-opacity-80 items-center justify-center p-4 z-50 backdrop-blur-sm">
-        <div class="bg-gray-800 rounded-2xl p-8 max-w-md w-full border border-amber-900/30 shadow-2xl transform transition-all duration-300 scale-95 opacity-0">
+    <div id="resultsModal" class="fixed inset-0 flex items-center justify-center p-4 z-50" style="opacity: 0; visibility: hidden; pointer-events: none;">
+        <div class="bg-gray-800 rounded-2xl p-8 max-w-md w-full border border-amber-900/30 shadow-2xl">
             <div class="text-center mb-2">
                 <div class="w-16 h-16 bg-amber-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -165,6 +165,6 @@
         </div>
     </div>
 
-    <script type="module" src="/script.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 </html>

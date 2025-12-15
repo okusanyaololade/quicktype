@@ -52,6 +52,14 @@ let typedChars = []; // Track each character typed to recalculate stats on backs
 
 // Initialize the application
 function init() {
+    // Ensure modal is hidden on load
+    if (resultsModal) {
+        resultsModal.classList.remove('active');
+        resultsModal.style.opacity = '0';
+        resultsModal.style.visibility = 'hidden';
+        resultsModal.style.pointerEvents = 'none';
+    }
+    
     // Event Listeners
     startBtn.addEventListener('click', startTest);
     if (restartBtn) {
@@ -420,6 +428,9 @@ function showResultsModal() {
     
     // Add active class to show modal (CSS handles visibility)
     resultsModal.classList.add('active');
+    resultsModal.style.opacity = '1';
+    resultsModal.style.visibility = 'visible';
+    resultsModal.style.pointerEvents = 'auto';
     
     // Focus the try again button for better keyboard navigation
     setTimeout(() => {
@@ -433,6 +444,9 @@ function showResultsModal() {
 function closeResults() {
     console.log('Closing results modal');
     resultsModal.classList.remove('active');
+    resultsModal.style.opacity = '0';
+    resultsModal.style.visibility = 'hidden';
+    resultsModal.style.pointerEvents = 'none';
     
     // Return focus to the start button
     if (startBtn) {
