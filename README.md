@@ -29,4 +29,4 @@ A clean, elegant typing speed test application to measure and improve your typin
 1. Clone the repository:
    ```bash
    git clone [https://github.com/your-username/quicktype.git](https://github.com/your-username/quicktype.git)
-   cd quicktype/frontend
+   cd quicktype/frontend# quicktype
